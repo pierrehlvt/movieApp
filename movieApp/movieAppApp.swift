@@ -1,14 +1,11 @@
-//
-//  movieAppApp.swift
-//  movieApp
-//
-//  Created by Pierre Halavent on 27/03/2023.
-//
-
 import SwiftUI
 
 @main
 struct movieAppApp: App {
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemRed]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.systemRed]
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
